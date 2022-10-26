@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+   
+  }  
+  
+  /*  BIG SCREEN STYLES  */
+  nav {
+    background-color: rgb(0, 0, 0);
+    height: 6.5vh;
+    min-height: 60px;
+    padding: 0 7vw;
+    background-color: rgba(0, 0, 0,);
+    color: rgba(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  
+  nav .logo {
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+  
+  .navList {
+    font-size: 17px;
+     text-transform: uppercase; 
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .navBtn {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navBtn div {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    transition: all 0.5s ease-in;
+  }
+ .Home{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: 100% 100%;
+  background-image: url("/image/mohamed-m-uAmgf8kRvqg-unsplash.jpg");
+  display: grid;
+  justify-content: center;
+  align-items: center; 
+ }
+ .name{
+  color: #B8C8FD;
+  text-align: center;
+    margin-top: 250px;
+    margin-left: 90px;
+    font-size: 26px;
+  }
+  /*  SMALL SCREEN STYLES  */
+  @media screen and (max-width: 768px) {
+    body {
+      overflow: hidden;
+    }
+  
+    nav {
+      padding: 0 30px 0 35px;
+    }
+  
+    .navList {
+      /* stick navList to window just below navbar  */
+      position: absolute;
+      right: 0px;
+      height: 93vh;
+      top: clamp(65px, 7vh, 7vh);
+      /* li from row to column few */
+      flex-direction: column;
+      gap: 5vh;
+      align-items: center;
+      /* make it a bit pretty :) */
+      padding: 5vh 15vw;
+      background-color: rgba(0, 0, 0);
+      font-size: 26px;
+      letter-spacing: 1px;
+      /* makes a background a bit blury */
+      backdrop-filter: blur(5px);
+      /* will move container off the screen temporarly :) */
+      transform: translate(100%);
+      transition: transform 0.5s ease-out;
+    }
+  
+    .navLi {
+      opacity: 0;
+      transform: translate(250px, 0);
+    }
+  
+    .navBtn {
+      display: block;
+    }
+  }
+  
+  /*  NAVLIST ACTIVATION */
+  .navActive {
+    transform: translate(0%);
+  }
+  
+  /* LI ELEMENTS JAZZED UP TRANSFORMATION */
+  .fadeIn {
+    opacity: 1;
+    /* transform: scale(1); */
+    transform: translate(0, 0);
+  }
+  
+  /* TOGLE CLASSES TO MAKE 3LINE BUTTON INTO X */
+  .navBtnToggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  
+  .navBtnToggle .line2 {
+    transform: scale(0) translate(10px, 0);
+  }
+  
+  .navBtnToggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
