@@ -60,15 +60,80 @@
   display: grid;
   justify-content: center;
   align-items: center; 
+  z-index: -2;
  }
+ /* RAGHULSHAKTHI */
  .name{
   color: #B8C8FD;
   text-align: center;
-    margin-top: 250px;
-    margin-left: 90px;
+    margin-top: 259px;
+    margin-bottom: 0;
+    margin-left: 80px;
     font-size: 26px;
+
   }
-  /* continue here */
+  /* frontend developer */
+  .fe{
+    color: #76B6FF;   
+    text-align: center;
+    margin-top: -150px;
+    margin-left: 70px;
+    font-size: 36px;
+  } 
+ /* download cv  */
+ 
+section {
+ margin-left: 250px;
+ margin-top: -230px;
+}
+.btn-link {
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  background: #2389FF;
+  color: #FFF5F5;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 20px auto 2px;
+  border-radius: 25px;
+  transition: all 0.25s ease-in;
+  z-index: 1;
+}
+/* .btn-link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #2389FF;
+  z-index: -1;
+  border-radius: 25px;
+  transition: all 0.25s ease-in;
+} */
+.btn-link:hover {
+  color: #fff;
+  background: #007bff;
+  text-decoration: none;
+  cursor: copy;
+}
+/* .btn-link:hover:after {
+  bottom: -5px;
+  background: #007bff;
+  opacity: 0.75;
+}
+.btn-link:active {
+  color: #fff;
+  text-decoration: none;
+  background: #007bff;
+  transform: translateY(5px);
+}
+.btn-link:active:after {
+  bottom: 0px;
+} */
+  /* continue here page not navigating need to solve */
   /*  SMALL SCREEN STYLES  */
   @media screen and (max-width: 768px) {
     body {
@@ -78,6 +143,7 @@
     nav {
       padding: 0 30px 0 35px;
     }
+    
   
     .navList {
       /* stick navList to window just below navbar  */
@@ -104,6 +170,7 @@
     .navLi {
       opacity: 0;
       transform: translate(250px, 0);
+      color: #B8C8FD;
     }
   
     .navBtn {
