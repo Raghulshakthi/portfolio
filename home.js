@@ -20,3 +20,4 @@ navBtn.addEventListener('click', () => {
   navBtn.classList.toggle('navBtnToggle');
 
 })
+

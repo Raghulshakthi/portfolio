@@ -66,7 +66,7 @@
  .name{
   color: #B8C8FD;
   text-align: center;
-    margin-top: 259px;
+    margin-top: 200px;
     margin-bottom: 0;
     margin-left: 80px;
     font-size: 26px;
@@ -76,22 +76,22 @@
   .fe{
     color: #76B6FF;   
     text-align: center;
-    margin-top: -150px;
+    margin-top: -350px;
     margin-left: 70px;
     font-size: 36px;
   } 
  /* download cv  */
  
 section {
- margin-left: 250px;
- margin-top: -230px;
+ margin-left: 100vh;
+ margin-top: -250px;
 }
 .btn-link {
   display: inline-block;
   position: relative;
   padding: 15px 20px;
   background: #2389FF;
-  color: #FFF5F5;
+  color: #fff5f5e6;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
@@ -114,16 +114,17 @@ section {
   transition: all 0.25s ease-in;
 } */
 .btn-link:hover {
-  color: #fff;
+  color: rgb(3, 2, 2);
   background: #007bff;
   text-decoration: none;
-  cursor: copy;
+  cursor: pointer;
 }
-/* .btn-link:hover:after {
+.btn-link:hover:after {
   bottom: -5px;
-  background: #007bff;
+  background: #007bff95;
   opacity: 0.75;
 }
+/*
 .btn-link:active {
   color: #fff;
   text-decoration: none;
