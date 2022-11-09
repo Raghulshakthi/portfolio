@@ -1,57 +1,56 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-   
-  }  
-  
-  /*  BIG SCREEN STYLES  */
-  nav {
-    background-color: rgb(0, 0, 0);
-    height: 6.5vh;
-    min-height: 60px;
-    padding: 0 7vw;
-    background-color: rgba(0, 0, 0,);
-    color: rgba(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-  }
-  
-  nav .logo {
-    font-size: 30px;
-    letter-spacing: 6px;
-  }
-  
-  .navList {
-    font-size: 17px;
-     text-transform: uppercase; 
-    list-style: none;
-    display: flex;
-    gap: 10px;
-  }
-  
-  nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .navBtn {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .navBtn div {
-    width: 30px;
-    height: 2px;
-    margin: 5px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2px;
-    transition: all 0.5s ease-in;
-  }
- .Home{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*  BIG SCREEN STYLES  */
+nav {
+  background-color: rgb(0, 0, 0);
+  height: 6.5vh;
+  min-height: 60px;
+  padding: 0 7vw;
+  background-color: rgba(0, 0, 0);
+  color: rgba(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 30px;
+  letter-spacing: 6px;
+}
+
+.navList {
+  font-size: 17px;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.navBtn div {
+  width: 30px;
+  height: 2px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  transition: all 0.5s ease-in;
+}
+.Home {
   width: 100%;
   height: 92vh;
   position: relative;
@@ -59,39 +58,45 @@
   background-image: url("/image/mohamed-m-uAmgf8kRvqg-unsplash.jpg");
   display: grid;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   z-index: -2;
- }
- /* RAGHULSHAKTHI */
- .name{
-  color: #B8C8FD;
-  text-align: center;
-    margin-top: 200px;
-    margin-bottom: 40px;
-    margin-left: 80px;
-    font-size: 26px;
+}
+/* RAGHULSHAKTHI */
 
-  }
-  /* frontend developer */
-  .fe{
-    color: #76B6FF;   
-    text-align: center;
-    margin-top: -350px;
-    margin-bottom: 30px;
-    margin-left: 70px;
-    font-size: 36px;
-  } 
- /* download cv  */
- 
+.name {
+  color: #b8c8fd;
+  text-align: center;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  font-size: 26px;
+  border-right: 1px solid;
+  animation: atomrk 8s steps(20) infinite;
+
+}
+/* frontend developer */
+.fe {
+  color: #76b6ff;
+  text-align: center;
+  margin-top: -320px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  font-size: 36px;
+}
+/* download cv  */
+
 section {
- margin-left: 100vh;
- margin-top: -240px;
+  margin-left: 100vh;
+  margin-top: -240px;
 }
 .btn-link {
   display: inline-block;
   position: relative;
   padding: 15px 20px;
-  background: #2389FF;
+  background: #2389ff;
   color: #fff5f5e6;
   font-size: 18px;
   text-align: center;
@@ -113,11 +118,11 @@ section {
   background: #007bff95;
   opacity: 0.75;
 }
-img{
+img {
   margin: 0px 10px 5px 0px;
   padding: 5px;
 }
-#social-media{
+#social-media {
   margin: 0px 10px 5px 0px;
   padding: auto;
   position: absolute;
@@ -128,104 +133,114 @@ img{
 }
 /* 2npage */
 
-#about{
+#about {
   width: 100%;
   height: 100vh;
   position: absolute;
   bottom: 10;
   margin-top: 10%;
-  background-size: 50%  50%;
-  background-color: #000;
-  background-image: url(image/coffee-1911784-removebg-preview.png) ;
+  background-size: 50% 50%;
+  background-color: #000000;
+  /* background-image: url(image/coffee-1911784-removebg-preview.png) ; */
   background-repeat: no-repeat;
   z-index: -2;
 }
-.intro{
+.intro {
   position: absolute;
-  top: 200px;
+  top: 150px;
   right: 130px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 110px;
 }
-.intro h1{
+.intro h1 {
+  font-family: monospace;
   font-size: 50px;
   color: rgb(14, 125, 221);
 
 }
-.intro p{
-  color: rgb(111, 186, 252);
+.intro p {
+  font-family: cursive;
+  color: rgb(105, 186, 240);
   margin-top: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 30px;
 }
-  /* continue here page not navigating need to solve */
-  /*  SMALL SCREEN STYLES  */
-  @media screen and (max-width: 768px) {
-    body {
-      overflow: hidden;
-    }
-  
-    nav {
-      padding: 0 30px 0 35px;
-    }
-    
-  
-    .navList {
-      /* stick navList to window just below navbar  */
-      position: absolute;
-      right: 0px;
-      height: 93vh;
-      top: clamp(65px, 7vh, 7vh);
-      /* li from row to column few */
-      flex-direction: column;
-      gap: 5vh;
-      align-items: center;
-      /* make it a bit pretty :) */
-      padding: 5vh 15vw;
-      background-color: rgba(0, 0, 0);
-      font-size: 26px;
-      letter-spacing: 1px;
-      /* makes a background a bit blury */
-      backdrop-filter: blur(5px);
-      /* will move container off the screen temporarly :) */
-      transform: translate(100%);
-      transition: transform 0.5s ease-out;
-    }
-  
-    .navLi {
-      opacity: 0;
-      transform: translate(250px, 0);
-      color: #B8C8FD;
-    }
-  
-    .navBtn {
-      display: block;
-    }
+/* continue here page not navigating need to solve */
+/* animation  */
+@keyframes atomrk {
+  0% {
+    width: 0ch;
   }
-  
-  /*  NAVLIST ACTIVATION */
-  .navActive {
-    transform: translate(0%);
+  50% {
+    width: 45ch;
   }
-  
-  /* LI ELEMENTS JAZZED UP TRANSFORMATION */
-  .fadeIn {
-    opacity: 1;
-    /* transform: scale(1); */
-    transform: translate(0, 0);
+}
+/*  SMALL SCREEN STYLES  */
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
   }
-  
-  /* TOGLE CLASSES TO MAKE 3LINE BUTTON INTO X */
-  .navBtnToggle .line1 {
-    transform: rotate(-45deg) translate(-4px, 6px);
+
+  nav {
+    padding: 0 30px 0 35px;
   }
-  
-  .navBtnToggle .line2 {
-    transform: scale(0) translate(10px, 0);
+
+  .navList {
+    /* stick navList to window just below navbar  */
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: clamp(65px, 7vh, 7vh);
+    /* li from row to column few */
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    /* make it a bit pretty :) */
+    padding: 5vh 15vw;
+    background-color: rgba(0, 0, 0);
+    font-size: 26px;
+    letter-spacing: 1px;
+    /* makes a background a bit blury */
+    backdrop-filter: blur(5px);
+    /* will move container off the screen temporarly :) */
+    transform: translate(100%);
+    transition: transform 0.5s ease-out;
   }
-  
-  .navBtnToggle .line3 {
-    transform: rotate(45deg) translate(-4px, -6px);
+
+  .navLi {
+    opacity: 0;
+    transform: translate(250px, 0);
+    color: #b8c8fd;
   }
+
+  .navBtn {
+    display: block;
+  }
+}
+
+/*  NAVLIST ACTIVATION */
+.navActive {
+  transform: translate(0%);
+}
+
+/* LI ELEMENTS JAZZED UP TRANSFORMATION */
+.fadeIn {
+  opacity: 1;
+  /* transform: scale(1); */
+  transform: translate(0, 0);
+}
+
+/* TOGLE CLASSES TO MAKE 3LINE BUTTON INTO X */
+.navBtnToggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.navBtnToggle .line2 {
+  transform: scale(0) translate(10px, 0);
+}
+
+.navBtnToggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+}
