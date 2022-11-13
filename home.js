@@ -21,3 +21,25 @@ navBtn.addEventListener('click', () => {
 
 })
 
+//show
+function load(){
+  document.querySelectorAll(".progress").forEach(function(current){
+    let startwidth=0;
+    const endwidth=current.dataset.size;
+    const time=setInterval(frame ,20);
+
+    function frame(){
+      if(statwidth>=endwidth){
+        clearInterval(time)
+      }
+      else{
+        startwidth++;
+        current.style.width=`${endwidth}%`;
+        current.firstElementChild.innerHTML=`${startwidth}%`;
+      }
+    }
+
+  })
+}
+load();
+// document.querySelector('a').addEventListener('click',load,{once:true}) 
