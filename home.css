@@ -441,12 +441,41 @@ img {
 }
 /*  */
 #projects{
-  height: 100vh;
+  margin:5px;
+  height: 100%;
   width: 100%;
-  background-color: #ff0019;
+  background-color: #ebe1e2;
   background-blend-mode: lighten;
 }
+.card-1{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,380px);
+}
+.loading{
+text-align: center;
+margin-top: -60%;
+width: 0ch;
+animation: load 3s steps(2) infinite;
+}
+.clock-1:hover {
+  cursor: move;
+ height: 400px;
 
+}
+
+.clock-1 > img,h2{
+  color: #000000;
+}
+.names{
+  background-color: #000000;
+  color: #2389ff;
+}
+.projects{
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
 /* continue here page not navigating need to solve */
 /* animation  */
 @keyframes atomrk {
@@ -455,6 +484,14 @@ img {
   }
   50% {
     width: 45ch;
+  }
+}
+@keyframes load {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 5ch;
   }
 }
 @keyframes aboutme {
@@ -473,6 +510,7 @@ background-position: 0px 0px;
     background-position: 30px 30px;
   }
 }
+
 
 /*  SMALL SCREEN STYLES  */
 @media screen and (max-width: 768px) {
