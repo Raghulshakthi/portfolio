@@ -466,14 +466,12 @@ animation: load 3s steps(2) infinite;
 .names{
   display: contents;
   text-align: center;
-
 }
 .cmn{
   margin: 10px;
 }
 .cmn:hover {
   cursor: move;
-
 }
 .names{
   display: none;
@@ -488,7 +486,7 @@ animation: load 3s steps(2) infinite;
 .clock-1:hover > h2{
   margin-left: 50%;
 
-} */
+}
 .names{
   background-color: #f20a0a;
   color: #f5f8fc;
